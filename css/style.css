@@ -33,6 +33,13 @@ html {
 img{
     width: 100%;
 }
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 30px 0;
+}
 a{
     text-decoration: none;
     color: #000000;
@@ -91,11 +98,10 @@ height: 9px;
 background:rgba(48,48,48,1);
 display: inline-block;
 margin: 0 20px;
-
 }
 .header_menu ul li:last-child a::after{
     display: none;
-    }
+}
 .header_menu ul li{
     list-style-type: none;
     display: inline;
@@ -507,6 +513,87 @@ padding: 20px 0;
 }
 /* END Contact page */
 
+/* START Category page */
+.categoty_block{
+    width: 100%;
+    margin: 20px 0 50px 0;
+}
+.categoty_title{
+    width: 100%;
+    display: inline-block;
+    color: white;
+    font-size:20px;
+    margin: 20px 0;
+}
+.categoty_block_wraper{
+    display: flex;
+}
+.categoty_slider_block{
+    width: 50%;
+    height: 320px;
+    margin-right: 20px;
+}
+.categoty_slider_block a{
+    outline:none;
+}
+.categoty_slider_block .slick-list{
+    height:100%;
+}
+.categoty_block_description{
+    width: 50%;
+}
+.categoty_block_description{
+    color: #ffffff;
+}
+.category_link{
+    display: inline-block;
+    color: #ffffff;
+    background: #a59886;
+    font-size: 14px;
+    padding: 15px 60px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-weight: 600;
+    -webkit-transition: border .1s,background .3s;
+    -o-transition: border .1s,background .3s;
+    -moz-transition: border .1s,background .3s;
+    transition: border .1s,background .3s;
+}
+.category_link:hover{
+background: #565652;
+}
+.button_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 50px 0 0;
+}
+.zakaz_button{
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 10px 20px;
+    font-size:14px;
+    cursor: pointer;
+    -webkit-transition: border .1s,background .3s;
+    -o-transition: border .1s,background .3s;
+    -moz-transition: border .1s,background .3s;
+    transition: border .1s,background .3s;
+}
+.zakaz_button:hover{
+    background: #708090;
+    color: #ffffff;
+}
+.line{
+    width: 65%;
+    margin: 70px auto;
+    height: 1px;
+    background: white;  
+}
+/* END Category page */
+
+
 /* STAR Footer */
 #footer{
     display: flex;
@@ -550,7 +637,6 @@ padding: 20px 0;
     line-height: 28px;
     color: #ffffff;
     font-family: 'social-icons-v4';
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
