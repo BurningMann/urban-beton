@@ -8,6 +8,7 @@
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/slick-theme.css" rel="stylesheet">
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
     </header>
         <main id="main" class="project_main">
             <h1>БОЛЛАРДЫ / УЛИЧНЫЕ СВЕТИЛЬНИКИ</h1>
-            <div class="categoty_block">
+            <div class="categoty_block scroll_fade">
                 <span class="categoty_title">
                     БОЛЛАРДЫ
                 </span>
@@ -64,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="categoty_block">
+            <div class="categoty_block scroll_fade">
                 <span class="categoty_title">
                     БОЛЛАРДЫ
                 </span>
@@ -100,8 +101,8 @@
 
 
 
-            <div class="line"></div>
-            <div class="text_content">
+            <div class="line scroll_fade"></div>
+            <div class="text_content scroll_fade">
                 <p>Панели для отделки фасадов и интерьеров  могут быть выполнены в различных вариантах размеров и фактур. Часто, для создания выразительных композиций, используются рельефные панели из бетона или перфорированные панели из фибробетона. </p>
                 <p>Уличные скамейки с деревянными настилами и кашпо из фибробетона, стильные бетонные болларды (парковочные столбики) и садовые светильники из бетона - это изделия с большим потенциалом использования для коммерческих и частных объектов.</p>
                 <p>Любые из бетонных элементов идеально комбинируются друг с другом и могут быть использованы как композиции. Многочисленные варианты сочетаний бетонных уличных скамеек с кашпо для цветов, дополненных садово-парковыми светильниками и парковочными столбиками, могут стать оригинальным и органичным оформлением дворового пространства или парковой зоны. </p>
@@ -153,5 +154,14 @@
         <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/viewportchecker.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                jQuery('.scroll_fade').addClass("hidden").viewportChecker({
+                    classToAdd: 'visible animated slow fadeInUp',
+                    offset: 100    
+                   });   
+            });            
+            </script>
 </body>
 </html>

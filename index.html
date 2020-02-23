@@ -7,6 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
@@ -66,16 +67,16 @@
                     <a href="/"><span>Панели</span><img alt="" src="https://static-cdn3.vigbo.tech/u53941/66469/blog/4844712/3946478/50487378/500-2f9619e3ad78dd6af8faa8ae0169892c.jpg"></a>
                 </div>
             </div>
-            <div class="offer_block_wraper">
+            <div class="offer_block_wraper scroll_fade">
                 <div class="offer_block_element"><a href="/"><span>ОТКРЫТЬ <br>ПРЕДЛОЖЕНИЕ ДЛЯ БИЗНЕСА<span></a></div>
                 <div class="offer_block_element"><a href="/"><span></span>ОТКРЫТЬ <br>ПРЕДЛОЖЕНИЕ ДЛЯ ЧАСТНЫХ КЛИЕНТОВ<span></span></a></div>
             </div>
-            <div class="text_content">
+            <div class="text_content scroll_fade">
                 <p>Современные архитектурные решения обустройства частных территорий и городской застройки включают в себя применение актуальных, с точки зрения материалов и дизайна, малых архитектурных форм. </p>
                 <p>Применяемые последние десятилетия изделия из бетона морально устаревают и всё меньше воспринимаются как украшение городской среды, но им на смену приходят технологии, позволяющие производить малые архитектурные формы из бетона, на совершенно другом, качественном уровне.</p>
                 <p>Узнать цену на данные изделия можно отправив запрос и заполнив небольшую форму в разделе любого из направлений. Стоимость, наличие изделий, сроки производства можно уточнить по указанным в разделе «КОНТАКТЫ» телефонам.</p>
             </div>
-            <div class="project_block">
+            <div class="project_block ">
                 <div class="project_block_title bottom_line">ПРОЕКТЫ</div>
                 <div class="project_block_row">
                     <div class="project_block_description">
@@ -155,7 +156,7 @@
             </div>
         </main>
         <div class="form_line">
-            <div class="form_line_button">ОТПРАВИТЬ ПРОЕКТ ДЛЯ РАСЧЕТА</div>
+            <div class="form_line_button scroll_fade">ОТПРАВИТЬ ПРОЕКТ ДЛЯ РАСЧЕТА</div>
         </div>
         <footer id="footer">
             <div class="footer_block">
@@ -208,5 +209,14 @@
         <!-- <script src="js/jquery.fancybox.min.js"></script> -->
         <script src="js/slick.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/viewportchecker.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                jQuery('.scroll_fade').addClass("hidden").viewportChecker({
+                    classToAdd: 'visible animated slow fadeInUp',
+                    offset: 100    
+                   });   
+            });            
+            </script>
 </body>
 </html>
